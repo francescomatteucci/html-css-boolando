@@ -4,21 +4,27 @@
 }
 body{
     display:flex;
+    justify-content: center; 
     
-    flex-direction: column;
-   
 }
 .container{
-    width:60%;
-  
-    height: 500px;
     display:flex;  
+    border: 2px solid;
+    max-width: 800px;
+    flex-wrap: wrap;
 }
-main{
+.row{
     display:flex;
+    flex-direction: row;
+}
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
 img{
-    max-width: 100%;
+    max-width:100%;
+    height:auto;
 }
 .current-price {
     font-weight: bold;
@@ -30,23 +36,13 @@ img{
     font-weight: normal;
 }
 .col-1{
-  
     width:calc(100% /3);
-    height:80%;
     position:relative;
-    margin:10px;
     display: flex;
     flex-direction: column; 
+    border: 2px solid;
 }
 .sconto50-box{
-    width:40px;
-    height:20px;
-    background-color: rgb(233, 29, 22);
-    position: absolute;
-    bottom:80px;
-    color:white;
-}
-.sconto30-box{
     width:40px;
     height:20px;
     background-color: rgb(233, 29, 22);
@@ -64,6 +60,14 @@ img{
     left:44px;
     color: white;
 }
+.green-box-2{
+    width:80px;
+    height:20px;
+    background-color: green;
+    position: absolute;
+    bottom:80px;
+    color: white;
+}
 .heart{
     width:36px;
     height:36px;
@@ -74,4 +78,13 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
 } 
+.sconto30-box{
+    width:40px;
+    height:20px;
+    background-color: rgb(233, 29, 22);
+    position: absolute;
+    bottom:80px;
+    color:white;
+}
